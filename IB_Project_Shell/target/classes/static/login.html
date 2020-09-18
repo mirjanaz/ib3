@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/login.css">
+<script src="js/login.js"></script>
+<!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /-->
+
+<div class="text-center" style="padding:30px 150px">
+	<h1>Sign in</h1>
+	<!-- Main Form -->
+		<div class="login-form-1">
+			<form id="login-form" class="text-left">
+			<div class="login-form-main-message"></div>
+			<div class="main-login-form">
+				<div class="login-group">
+					<div class="form-group">
+						<label class="sr-only">Username :</label>
+						<input type="text" class="form-control" id="username" name="lg_username" >
+						<label id="greska"></label>
+					</div>
+					<div class="form-group">
+						<label class="sr-only">Password :</label>
+						<input type="password" class="form-control" id="password" name="lg_password" >
+						<label id="greska1"></label>
+					</div>
+
+				</div>
+				<button type="button" onclick="logins()" class="login-button" id="login"><i class="fa fa-chevron-right"></i>Login</button>
+			</div>
+			</form>
+		</div>
+</div>
+
+
+<div class="text-center" style="padding:0px 150px">
+	<h1>Sign up</h1>
+	<!-- Main Form -->
+	<div class="login-form-1">
+		<form id="register-form" class="text-left">
+		<div class="login-form-main-message"></div>
+		<div class="main-login-form">
+			<div class="login-group">
+				<div class="form-group">
+					<label for="reg_username" class="sr-only">Username :</label>
+					<input type="text" class="form-control" id="reg_username" name="reg_username" >
+					<label id="greska2"></label>
+				</div>
+				<div class="form-group">
+					<label for="reg_password" class="sr-only">Password :</label>
+					<input type="password" class="form-control" id="reg_password" name="reg_password" >
+					<label id="greska3"></label>
+				</div>
+				<div class="form-group">
+					<label for="reg_email" class="sr-only">Email :</label>
+					<input type="text" class="form-control" id="reg_email" name="reg_email" >
+					<label id="greska4"></label>
+				</div>
+				<div class="form-group">
+					<label for="reg_fullname" class="sr-only">First name :</label>
+					<input type="text" class="form-control" id="reg_fullname" name="reg_fullname" >
+					<label id="greska5"></label>
+				</div>
+				<div class="form-group">
+					<label for="reg_lastname" class="sr-only">Lastname :</label>
+					<input type="text" class="form-control" id="reg_lastfullname" name="reg_lastname" >
+					<label id="greska6"></label>
+				</div>
+
+
+			</div>
+			<button type="button" class="login-button" id="register"><i class="fa fa-chevron-right"></i>Sign up</button>
+		</div>
+
+		</form>
+	</div>
+
+</div>
+
+<footer class="container-fluid text-center">
+        <p>Copyright Mirdza</p>
+</footer>
